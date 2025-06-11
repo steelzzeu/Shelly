@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  @apply bg-background text-white font-sans;
+}
+
+/* Custom scrollbar for immersive dark feel */
+::-webkit-scrollbar {
+  width: 8px;
+  background: #0a192f;
+}
+::-webkit-scrollbar-thumb {
+  background: #222c3a;
+  border-radius: 4px;
+}
+
+/* SSRP Glow-on-scroll effect for header border */
+.ssrp-header-glow {
+  box-shadow: 0 2px 0 0 #f97316 inset;
+}
+
+/* Card blur + elevation */
+.ssrp-card {
+  @apply bg-ssrp-navy bg-opacity-90 backdrop-blur border border-ssrp-navy shadow-ssrp-card rounded-lg;
+}
